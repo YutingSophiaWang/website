@@ -139,18 +139,25 @@
         </ul>
 	  <p>&nbsp;</p>
 	  <p align="center"><strong><span class="style21"><a name="current" id="current">Current Research & Projects</a></span></strong></p>
-	  <p align="center"><strong>Modified Modular Deep Neural Networks for Acoustic Models (mDNN-AM) in Speech Recognition</strong></p>
+	  <p align="center"><strong>Modular Deep Neural Networks (mDNN) with Improved Bottleneck Features and Residual Learning for Speech Recognition</strong></p>
 		<p align="center"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><img src="./mDNN-AM.jpg" alt="Modified Modular Deep Neural Networks for Acoustic Models (mDNN-AM) in Speech Recognition" height="407" border="0" align="middle" /></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></p>
 		<blockquote>
 		  <p align="justify"><br />
-		    <font face="Arial, Helvetica, sans-serif">We are developing modified mDNN-AM systems that reduce both temporal and spectral variations widely existing in speech signals so as to achieve much lower word error rate (WER) for speech recognition. We propose to introduce frequency shift invariant windows as inputs into the original mDNN-AM model to reduce frequency translation variation.<br />
+		    <font face="Arial, Helvetica, sans-serif">We are developing a speech recognition system based on modular DNN for acoustic models (mDNN-AM), which consists of a bottleneck features (BNF) module as features and a DNN module as classifiers. We are Evaluating the speech recognition system on the large-scale IWSLT 2014 benchmark.<br />
 	        </font></p>
 	      <p align="justify"><font face="Arial, Helvetica, sans-serif">
-          We propose additional modifications for further variation reduction and performance improvement in three aspects:<br />
-          1) We introduce a second bottleneck features (BNF) module after the parallel BNF layers and before the DNN module.<br />
-          2) We introduce a time delay/convolutional layer after the parallel BNF layers.<br />
-          3) We introduce a full short connection between the first and last hidden layers in the DNN module to decrease the entire training time.<br />
-           Evaluation of speech recognition on the large-scale IWSLT benchmarks shows initial promise of the proposed systems.</font></p>
+	  We developed a modified BNF module, which reduces both temporal and spectral variations widely existing in speech signals: <br />
+	  1) We combined 9 frequency-shift-invariant windows with the IMEL features as inputs to the BNF module.<br />
+          2) We reduced 5% word error rate (WER) compared with the baseline mDNN-AM.</font></p>
+	     <p align="justify"><font face="Arial, Helvetica, sans-serif">
+	  We developed a modified BNF module, which reduces both temporal and spectral variations widely existing in speech signalsa modified DNN module by using a residual learning framework to facilitate the training of the network with increased depth and achieve much lower WER: <br />
+	  1) We introduced skip connections between certain DNN hidden layers.<br />
+          2) We evaluated variants of skip connection structures and reduced 3% WER..</font></p>
+	      <p align="justify"><font face="Arial, Helvetica, sans-serif">
+          We proposed additional modifications for further variation reduction and performance improvement.:<br />
+          1) We introduced a second BNF module to reduce the dimension of the stacked BNF layers and decrease WER.<br />
+          2) We replaced the modified BNF with a time delay/convolutional layer to evaluate the function of shift windows.<br />
+          Evaluation of speech recognition on the large-scale IWSLT benchmarks shows initial promise of the proposed systems.</font></p>
 	  </blockquote>
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
@@ -185,7 +192,7 @@
         <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 	  <p align="center"><strong>Face Recognition based on Sparse Representation</strong></p>
-	  <p align="center"><strong> [<a href="http://link.springer.com/article/10.1007%2Fs11042-015-3042-2">PaperI</a>] [<a href="research/Neurocomputing.pdf">PaperII</a>]</strong></p>
+	  <p align="center"><strong> [<a href="http://link.springer.com/article/10.1007%2Fs11042-015-3042-2">PaperI</a>] [<a href="./SPIE.pdf">PaperII</a>]</strong></p>
 <p align="center"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif"><img src="./face.png" alt="Face Recognition based on Sparse Representation" width="550" border="0" align="middle"></font></font></font></font></font></p>
     <blockquote>
       <p align="justify"><br />
