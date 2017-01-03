@@ -294,42 +294,39 @@ body {
         </tbody></table>
       <p align="right" class="style23"><a href="cv.html#home">[return]  </a></p><a href="cv.html#home">
         
-</a><p class="style9"><a href="cv.html#home">  </a><a name="research" id="research">RESEARCH EXPERIENCE </a><br>
+</a><p class="style9"><a href="cv.html#home">  </a><a name="research" id="research">RESEARCH EXPERIENCE </a> 
 
 </p><table width="811" border="0">
         <tbody>
         <tr>
         <td width="667" class="style24"><p align="justify" class="style26"><strong>
-          Modular Deep Neural Networks (mDNN) with Improved Bottleneck Features and Residual Learning for Speech Recognition</strong><br>
-        </p></td>
-        <td width="134" class="style24"><p align="right">
-	Aug. 2016 - Present<br>Karlsruhe, Germany<br>CMU, USA<tr>
-          <td colspan="2" class="style24"><span class="style26"><em>Interactive Systems Lab, Institute of Anthropometrics and Robotics</em></br><em>Master’s Thesis Supervised by Professor <a style=" text-decoration: none; color: blue;" href="http://www.cs.cmu.edu/~fmetze/interACT/Home.html">Florian Metze</a> (CMU) & Professor <a style=" text-decoration: none; color: blue;" href="http://www.cs.cmu.edu/~ahw/"> Alexander Waibel</a> (KIT) </em>
-          </td>
+          Modified Modular Deep Neural Networks for Acoustic Models (mDNN-AM) in Speech Recognition</strong><br>
+        </td>
+        <td width="134" class="style24">   
+    </p>
+    Oct. 2015 - Present</br>Karlsruhe, Germany</br>CMU, USA<tr>
+          <td colspan="2" class="style24"><span class="style26"><em>Interactive Systems Lab, Institute of Anthropometrics and Robotics</em></br><em>Master’s Thesis Supervised by Professor <a style=" text-decoration: none; color: blue;" href="http://www.cs.cmu.edu/~ahw/"> Alexander Waibel</a> (KIT) & Professor <a style=" text-decoration: none; color: blue;" href="http://www.cs.cmu.edu/~fmetze/interACT/Home.html">Florian Metze</a> (CMU)</em>
+          </span></td>
           <tr>
           <td colspan="2" class="style24"><ul>
-            <li><span class="style26">Developing a speech recognition system based on modular DNN for acoustic models (mDNN-AM), which consists of a bottleneck features (BNF) module as features and a DNN module as classifiers.</span></li>
+            <li><span class="style26">Develop modified mDNN-AM systems that reduce both temporal and spectral variations widely existing in speech signals so as to achieve much lower word error rate (WER) for speech recognition.</span></li>
           </ul></td>
           <tr>
             <td colspan="2" class="style24"><ul>
-              <li><span class="style26">Evaluating the speech recognition system on the large-scale IWSLT 2014 benchmark.</span></li>
+              <li><span class="style26">Propose to introduce frequency shift invariant windows as inputs into the original mDNN-AM model to reduce frequency translation variation.</span></li>
             </ul></td>
           <tr>
-	    <td colspan="3" class="style24"><ul>
-              <li><span class="style26">Developed a modified BNF module, which reduces both temporal and spectral variations widely existing in speech signals.<br />
-- Combined 9 frequency-shift-invariant windows with the IMEL features as inputs to the BNF module.<br />
-- Reduced 5% word error rate (WER) compared with the baseline mDNN-AM.</span></li>
-                   </ul></td>
-            <td colspan="3" class="style24"><ul>
-              <li><span class="style26">Developed a modified DNN module by using a residual learning framework to facilitate the training of the network with increased depth and achieve much lower WER.<br />
-- Introduced skip connections between certain DNN hidden layers.<br />
-- Evaluated variants of skip connection structures and reduced 3% WER.</span></li>
-                    </ul></td>
-            <td colspan="3" class="style24"><ul>
-              <li><span class="style26">Proposed additional modifications for further variation reduction and performance improvement.<br />
-- Introduced a second BNF module to reduce the dimension of the stacked BNF layers and decrease WER.<br />
-- Replaced the modified BNF with a time delay/convolutional layer to evaluate the function of shift windows.</span></li>
-		    </ul></td>
+            <td colspan="2" class="style24"><ul>
+              <li><span class="style26">Propose additional modifications for further variation reduction and performance improvement.<br />
+- Introduce a second bottleneck features (BNF) module after the parallel BNF layers and before the DNN module.<br />
+- Introduce a time delay/convolutional layer after the parallel BNF layers.<br />
+- Introduce a full short connection between the first and last hidden layers in the DNN module to decrease the entire training time.</span></li>
+            </ul></td>
+          <tr>
+            <td colspan="2" class="style24"><ul>
+              <li><span class="style26">Evaluating speech recognition on the large-scale IWSLT benchmarks, showing initial promise of the proposed systems.</span></li>
+            </ul></td>          
+        <tr>
           <td width="667" class="style16">&nbsp;</td></tr> 
           <tr>
         <td width="667" class="style24"><p align="justify" class="style26"><strong>
